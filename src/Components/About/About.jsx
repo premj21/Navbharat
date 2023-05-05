@@ -1,6 +1,8 @@
 import React from 'react'
 import {Box,Image,Text} from '@chakra-ui/react'
 import first from './first.jpg'
+import second from './second.jpg'
+import third from './third.jpg'
 import { motion } from 'framer-motion'
 
 const About = () => {
@@ -9,21 +11,22 @@ const About = () => {
    const textanm = {
      ascren: {
        y: 100,
-       opacity: [
-        0
-       ],
+       opacity: 0,
      },
      cscren: {
        y: 0,
        opacity: [
-          0.1,0.1,0.2,0.2,0.3,0.3,0.4,0.4,0.5,0.5,0.6,0.6,0.7,0.7,0.8,0.8,0.9,0.9,1,1
+         0.1, 0.1, 0.2, 0.2, 0.3, 0.3, 0.4, 0.4, 0.5, 0.5, 0.6, 0.6, 0.7, 0.7,
+         0.8, 0.8, 0.9, 0.9, 1, 1,
        ],
        transition: {
          duration: 1.4,
-          delay: 0.,
+         delay: 0,
        },
      },
    };
+
+   
 
 
   return (
@@ -32,6 +35,7 @@ const About = () => {
         w="80vw"
         h="80vh"
         display={"flex"}
+        flexDir={{base:"column",md:'row'}}
         alignItems={"center"}
         justifyContent={"center"}
       >
@@ -62,7 +66,6 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-
       <Box
         w="80vw"
         h="80vh"
@@ -79,7 +82,7 @@ const About = () => {
           borderRadius={"10px"}
           w="45%"
           h="60%"
-          src={first}
+          src={second}
           alt="nothing"
           boxShadow={"0px 5px 20px rgba(0,0,0,0.180)"}
         />
@@ -113,7 +116,7 @@ const About = () => {
           borderRadius={"10px"}
           w="45%"
           h="60%"
-          src={first}
+          src={third}
           alt="nothing"
           boxShadow={"0px 5px 20px rgba(0,0,0,0.180)"}
         />
