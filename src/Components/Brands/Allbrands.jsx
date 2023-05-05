@@ -24,8 +24,7 @@ import v from '../assets/noise.webp'
 import w from '../assets/logues.webp'
 import x from '../assets/scientific-clock-mfg-co-120x120.jpg'
 import y from '../assets/sonata.avif'
-// import z from '../assets/watch.png.webp';
-
+import { motion} from 'framer-motion'
 
 
 
@@ -35,6 +34,17 @@ const Allbrands = () => {
         a,b,c,d,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,
     ];
 
+     const textanm = {
+       ascren: { y:70, opacity: 0.6 },
+       cscren: {
+        y:0,
+         opacity: 1,
+         transition: {
+           duration:1.5,
+           delay:0.1
+         },
+       },
+     };
   return (
     <>
       <Box
@@ -46,7 +56,7 @@ const Allbrands = () => {
         boxShadow="0px 5px 20px rgba(255, 251, 251, 0.1)"
         p="10px"
       >
-        <Text 
+        <Text
           position={"relative"}
           top={{ base: "-5", md: "3", lg: "2" }}
           fontSize={{ base: "6vmin", lg: "6vmin" }}
@@ -72,15 +82,19 @@ const Allbrands = () => {
       <Box
         h="fit-content"
         overflowX="hidden"
-        w={{ base: "100vw", md: "100vw",lg:'90vw' }}
+        w={{ base: "100vw", md: "100vw", lg: "90vw" }}
         display={"flex"}
         flexWrap={"wrap"}
-        alignItems={{base:"center",lg:'start'}}
+        alignItems={{ base: "center", lg: "start" }}
         justifyContent={"center"}
         gap={{ base: "3rem", md: "4rem" }}
       >
         {logo.map((item, index) => (
           <Image
+            as={motion.img}
+            variants={textanm}
+            animate="ascren"
+            whileInView="cscren"
             src={item}
             maxW={{ base: "15%", md: "8%" }}
             alt="logo loading"

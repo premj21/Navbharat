@@ -27,7 +27,7 @@ const TwoB = () => {
         flexDir={{ base: "column", md: "row" }}
         justifyContent={"center"}
       >
-        <Box w={{ base: "100%", md: "55%" }} p="2rem" h="100%">
+        <Box w={{ base: "100%", md: "55%" }} p={{ md: "2rem" }} h="100%">
           <AspectRatio ratio={{ base: 10 / 6, md: 10 / 5, lg: 9 / 4 }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.493693580057!2d75.91955229999999!3d17.6741232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5dbd45626eec9%3A0xbcfd8109950362fb!2sNavbharat%20watch%20company!5e0!3m2!1sen!2sin!4v1683087854871!5m2!1sen!2sin"

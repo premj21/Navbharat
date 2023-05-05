@@ -57,7 +57,7 @@ const Contact = () => {
         </Box>
 
         <Tabs
-          mb="10rem"
+          mb="3rem"
           w="100vw"
           position="relative"
           variant="unstyled"

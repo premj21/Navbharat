@@ -5,6 +5,8 @@ import Popular from "../Popular/Popular";
 import Allbrands from "../Brands/Allbrands";
 import Curstomer from "../CustomerR/Curstomer";
 import Footer from "../footer/Footer";
+import vid from './Navbhst.mp4';
+import Showcaseimg from "../Showcase/Showcaseimg";
 
 
 
@@ -77,6 +79,7 @@ const Home = () => {
             and the huihui and lmade log huihui escape the matrix bitchhh
           </Text>
         </Box>
+
         <Box w="30%" h="100%" display={{ base: "none", md: "flex" }}>
           <Box
             h="100%"
@@ -88,9 +91,13 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
+
+      <Showcaseimg />
+
       <Box w="100%" h="fit-content">
         <Popular />
       </Box>
+
       <Allbrands />
       <Box
         maxW={"100vw"}
@@ -123,10 +130,9 @@ const Home = () => {
           WHAT CUSTOMER SAY
         </Text>
       </Box>
-
       <Box
         w="100%"
-        h={{base:"180px",md:'190px',lg:'200px'}}
+        h={{ base: "180px", md: "190px", lg: "200px" }}
         display={"flex"}
         gap="5%"
         mb="5rem"
@@ -144,6 +150,17 @@ const Home = () => {
         <Curstomer />
         <Curstomer />
       </Box>
+
+      <Box w='100vw' h={{base:'20vh',md:'40vh',lg:'60vh'}}  ml={{lg:'-5rem'}}  display={'flex'} alignItems={'center'} justifyContent={'center'} >
+      <video
+        style={{ width: "100%", height: "100%", objectFit: "cover",boxShadow:'0px 5px 20px rgba(0,0,0,0.130)'}}
+        src={vid}
+        autoPlay  
+        loop
+        muted
+        controlsList="nodownload nofullscreen noremoteplayback noaudio"
+        ></video>
+        </Box>
       <Footer />
     </>
   );

@@ -1,56 +1,75 @@
-import { Box, Image,Text } from '@chakra-ui/react'
+import { Box,Text } from '@chakra-ui/react'
 import React from 'react'
+import Imges from './Imges';
+import a from './one.png';
+import b from "./two.png";
+import c from "./three.avif";
+import d from "./four.png";
+import e from "./five.png";
+import f from "./six.png";
 
 const Popular = () => {
     const data = [
       {
-        src: "https://staticimg.titan.co.in/Titan/Catalog/1797KL02F_1.jpg?impolicy=pqmed&imwidth=640",
-        price: "₹ 19,995.00",
-        name: "Titan Automatic Blue Dial",
-        link: "https://www.titan.co.in/product/titan-blue-dial-hand-wound-watch-for-men-1797kl02f",
-      },
-
-      {
-        src: "https://staticimg.titan.co.in/Titan/Catalog/95146KD02_1.jpg?impolicy=pqmed&imwidth=640",
-        price: "₹ 18,445.00",
-        name: "Titan Raga Ceramics Green Dial",
-        link: "",
+        src: a,
+        price: "₹ 21,495.00",
+        name: "Townsman Automatic Black Stainless Steel",
+        w: "100%",
+        h: "100%",
+        link: "https://www.fossil.com/en-in/products/44mm-townsman-automatic-black-stainless-steel-watch/ME3197I.html",
       },
       {
-        src: "https://cdn2.chrono24.com/images/uhren/25124074-ibskw0hbq6gvelidxg77fvcl-ExtraLarge.jpg",
-        price: "₹ 1,694,168",
-        name: "Rolex GMT-Master II",
-        link: "https://www.chrono24.in/rolex/gmt-master-ii-116713ln-steel--18k-yellow-gold-black-dial--id25124074.htm",
+        src: b,
+        w: "80%",
+        h: "100%",
+        price: "₹ 6,998.00",
+        name: "Silicone Giordano Analog Blue Dial",
+        link: "https://www.indiamart.com/proddetail/giordano-analog-blue-dial-men-s-watch-17951733691.html",
       },
       {
-        src: "https://staticimg.titan.co.in/Fastrack/Catalog/3147KM01_1.jpg?impolicy=pqmed&imwidth=640",
-        price: "₹ 4395.00",
-        name: "Black Dial Black Stainless Steel",
-        link: "https://www.fastrack.in/product/fastrack-watch-with-black-stainless-steel-strap-for-guys-3147km01",
-      },
-
-      {
-        src: "https://bigdeals24x7.com/uploads/product_image/product_Sonata-Arcade-From-Sf-Red-Digital-Watch-77100PP04_1.webp",
-        price: "₹ 1,049.00",
-        name: "Sonata Arcade From Sf Red",
-        link: "https://www.sonatawatches.in/product/arcade-from-sf-red-digital-watch-for-men-77100pp04",
-      },
-      {
-        src: "https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/gmb/gm-b2100gd-9a/assets/GM-B2100GD-9A.png",
+        src: c,
+        w: "100%",
+        h: "100%",
         price: "₹ 42,995.00",
         name: "GM-B2100GD-9A",
         link: "https://www.casio.com/in/watches/gshock/product.GM-B2100GD-9A/",
       },
-    ];
+      {
+        src: d,
+        w: "100%",
+        h: "100%",
+        price: "$165.00",
+        name: "Gold Tone Case Black Genuine leather/Silicone Watch",
+        link: "https://shop.guesswatches.com/gold-tone-case-black-genuine-leather-silicone-watch/GW0500G1.html?cgid=signature-style#start=1",
+      },
+
+      {
+        src: e,
+        price: "₹ 3,65,800",
+        w: "80%",
+        h: "100%",
+        name: "Captain Cook High-Tech Ceramic ",
+        link: "https://www.ethoswatches.com/product-rado-captain-cook-r32127162.html",
+      },
+      {
+        src: f,
+        w: "105%",
+        h: "105%",
+        price: "₹ 19,995.00",
+        name: "Titan Automatic Blue Dial Watch",
+        link: "https://www.titan.co.in/product/titan-blue-dial-hand-wound-watch-for-men-1797kl02f",
+      },
+    ];     
   return (
     <>
       <Box
         maxW={"100vw"}
+        overflowX={'hidden'}
         w="100vw"
         mt="3rem"
         ml={{ lg: "-5rem" }}
         bg="white"
-        boxShadow="0px 5px 20px rgba(255, 251, 251, 0.1)"
+        boxShadow="0px 5px 20px rgba(255, 251, 251, 0.120)"
         p="10px"
       >
         <Text
@@ -69,22 +88,22 @@ const Popular = () => {
           top="-50"
           letterSpacing={{ base: "10px", md: "8px", lg: "7px" }}
           textAlign={"center"}
-          fontSize={{md:"4vmin",lg:"4vmin"}}
+          fontSize={{ md: "4vmin", lg: "4vmin" }}
           fontWeight="300"
         >
           POPULAR ITEMS
         </Text>
       </Box>
       <Box
-        w="100vw"
+        maxW="100vw"
         p="5%"
-        ml={{lg:'-5rem'}}
         overflowX={"hidden"}
         display={"flex"}
         alignItems={"center"}
-        justifyContent={"center"}
+        justifyContent={"center"} 
         flexWrap={"wrap"}
         gap="16%"
+        // border={'1px solid black'}
       >
         {data.map((itme, index) => (
           <Box
@@ -93,24 +112,23 @@ const Popular = () => {
             alignItems={"center"}
             mt={{ md: "-2rem" }}
             mb="4rem"
-            w={{ base: "40%", md: "22%", lg: "17%" }}
+            w={{ base: "40%", md: "22%", lg: "18%" }}
             h="20%"
+           
           >
-            <Image src={itme.src} alt="pic loading" key={index} />
-            <Text
-              textAlign={"center"}
-              fontSize={{ base: "3vmin", md: "2vmin", lg: "2vmin" }}
-            >
-              {itme.name}
-            </Text>
-            <Text fontWeight={"600"} color={"blackAlpha.700"}>
-              {itme.price}
-            </Text>
+            
+              <Imges
+                link={itme.link}
+                w={itme.w}
+                h={itme.h}
+                src={itme.src}
+                name={itme.name}
+                price={itme.price}
+                index={index}
+              />
           </Box>
         ))}
       </Box>
-
-      <Box></Box>
     </>
   );
 }

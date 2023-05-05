@@ -5,8 +5,6 @@ import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 
-
-
 const Navbar = () => {
 
   const navigate = useNavigate();
@@ -18,17 +16,6 @@ const Navbar = () => {
     },
   };
 
-
-    // const opnt = {
-    //   initial: {
-    //     x: "100",
-    //     opacity: 0.5,
-    //   },
-    //   whileInView: {
-    //     x: 0,
-    //     opacity: 1,
-    //   },
-    // };
   return (
     <>
       <Box
@@ -41,16 +28,15 @@ const Navbar = () => {
         alignItems={"center"}
         p="0.7rem"
       >
-        <Box>
+        <Box cursor={"pointer"} onClick={() => navigate("/")}>
           <Image
-            
             as={motion.img}
             variants={textanm}
             animate={"ascren"}
             whileInView={"cscren"}
             viewport={{ once: false, amount: 1 }}
             src={pic}
-            ml="50%"
+            ml="100%"
             w="5vmax"
             h="4vmax"
             alt="Loading"
