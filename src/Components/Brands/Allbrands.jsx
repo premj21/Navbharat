@@ -27,8 +27,6 @@ import y from '../assets/sonata.avif'
 import { motion} from 'framer-motion'
 
 
-
-
 const Allbrands = () => {
     const logo= [
         a,b,c,d,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,
@@ -105,5 +103,4 @@ const Allbrands = () => {
     </>
   );
 }
-
 export default Allbrands
