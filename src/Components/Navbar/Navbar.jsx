@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navigate = useNavigate();
   const textanm = {
-    ascren: { x: 300, opacity:0 },
+    ascren: { x: 200, opacity:0 },
     cscren: {
       x: 0,
       opacity: 1,
@@ -39,7 +39,7 @@ const Navbar = () => {
             ml="100%"
             w="8vmax"
             h="4.5vmax"
-            alt="Loading"
+          
           />
         </Box>
         <Box
