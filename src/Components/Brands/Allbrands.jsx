@@ -31,7 +31,7 @@ const Allbrands = () => {
     const logo= [
         a,b,c,d,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,
     ];
-
+    
      const textanm = {
        ascren: { y:70, opacity: 0.6 },
        cscren: {
@@ -76,6 +76,9 @@ const Allbrands = () => {
           ALL BRANDS
         </Text>
       </Box>
+
+
+
 
       <Box
         h="fit-content"

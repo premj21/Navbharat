@@ -37,8 +37,8 @@ const Navbar = () => {
             viewport={{ once: false, amount: 1 }}
             src={pic}
             ml="100%"
-            w="5vmax"
-            h="4vmax"
+            w="8vmax"
+            h="4.5vmax"
             alt="Loading"
           />
         </Box>

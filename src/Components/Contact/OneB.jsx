@@ -108,5 +108,4 @@ const TwoB = () => {
     </>
   );
 };
-
 export default TwoB;
