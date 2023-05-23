@@ -27,14 +27,14 @@ const Showcaseimg = () => {
     <Box
       maxW="100vw"
       w="100vw"
-      h={{ base: "900px", md: "60vh",lg:'80vh' }}
+      h={{ base: "900px", md: "60vh", lg: "80vh" }}
       ml={{ lg: "-5rem" }}
       display={"flex"}
       flexDir={{ base: "column", md: "row" }}
       as={motion.div}
       variants={textanm}
-      animate={"ascren"}
-      whileInView={"cscren"}
+      animate={"cscren"}
+      initial={"ascren"}
     >
       <Image
         as={motion.img}

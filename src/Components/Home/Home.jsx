@@ -20,6 +20,7 @@ import Showcaseimg from "../Showcase/Showcaseimg";
       opacity: 1;
     } `;
 
+
 const Home = () => {
 
    
@@ -93,7 +94,6 @@ const Home = () => {
       </Box>
 
       <Showcaseimg />
-
       <Box w="100%" h="fit-content">
         <Popular />
       </Box>
