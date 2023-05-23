@@ -21,9 +21,14 @@ const TwoB = () => {
     };
   return (
     <>
-      <Box w="100%" display={"flex"} flexDir={{base:'column',md:'row'}} justifyContent={"center"}>
-        <Box w={{base:"100%",md:"55%"}} p={{md:"2rem"}} h="100%">
-          <AspectRatio ratio={{base:10 / 6,md:10/5,lg:9/4}}>
+      <Box
+        w="100%"
+        display={"flex"}
+        flexDir={{ base: "column", md: "row" }}
+        justifyContent={"center"}
+      >
+        <Box w={{ base: "100%", md: "55%" }} p={{ md: "2rem" }} h="100%">
+          <AspectRatio ratio={{ base: 10 / 6, md: 10 / 5, lg: 9 / 4 }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30411.310281286722!2d75.8637367743164!3d17.67790250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5da806e33ddd1%3A0x3c8332e97e248b7e!2sNavabharat%20Watch!5e0!3m2!1sen!2sin!4v1683090586530!5m2!1sen!2sin"
               width="600"
@@ -41,7 +46,7 @@ const TwoB = () => {
         </Box>
 
         <Box
-          w={{base:"100%",md:"40%"}}
+          w={{ base: "100%", md: "40%" }}
           h="100%"
           p="2rem"
           display={"flex"}
@@ -50,8 +55,8 @@ const TwoB = () => {
           alignItems={"start"}
           as={motion.div}
           variants={textanm}
-          animate="ascren"
-          whileInView="cscren"
+          animate={"cscren"}
+          initial={"ascren"}
         >
           <Box as={motion.div} variants={textanm} display={"flex"} gap="20px">
             <HomeIcon style={{ fontSize: "30px" }} />

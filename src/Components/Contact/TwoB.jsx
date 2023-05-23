@@ -55,8 +55,8 @@ const TwoB = () => {
           alignItems={"start"}
           as={motion.div}
           variants={textanm}
-          animate="ascren"
-          whileInView="cscren"
+          animate={"cscren"}
+          initial={"ascren"}
         >
           <Box as={motion.div} variants={textanm} display={"flex"} gap="20px">
             <HomeIcon style={{ fontSize: "30px" }} />
