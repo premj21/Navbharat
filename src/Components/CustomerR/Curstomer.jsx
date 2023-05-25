@@ -1,8 +1,7 @@
 import React from 'react'
 import {Box,Text} from '@chakra-ui/react'
 
-const Curstomer = () => {
-
+const Curstomer = ({name,msg}) => {
   return (
     <>
       <Box
@@ -17,12 +16,11 @@ const Curstomer = () => {
       >
         <Box minW="80%" minH="50%" p="7%" overflowY={"scroll"} bg="#e6e9ec">
           <Text fontSize={{base:'3vmin',md:'1.7vmin',lg:'2vmin'}}>
-            this isthe bstan the ain thing to do an the and thei l js i
-            testominialk klj
+           {msg}
           </Text>
         </Box>
         <Text ml="2%">__</Text>
-        <Text ml="2%" fontSize={{base:"3.2vmin",md:'1.8vmin'}}>Rahule Jeurkar</Text>
+        <Text ml="2%" fontSize={{base:"3.2vmin",md:'1.8vmin'}}>{name}</Text>
       </Box>
     </>
   );

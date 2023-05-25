@@ -23,6 +23,33 @@ import Showcaseimg from "../Showcase/Showcaseimg";
 
 const Home = () => {
 
+  const custmd = [
+    {
+      name: "Ganesh Goski",
+      msg: "You can get the quality products and assured branded products of watches in shop they  have variety of watches and they are very good you should buy watches in this shop",
+    },
+    {
+      name: "Rutvik Chavan",
+      msg: "Best shop to buy watches with affordable prices",
+    },
+    {
+      name: "Rahul Gawas",
+      msg: "Nice place for watch lovers,decent watches at decent priceI recently purchased an casio enticer series watch, well satisfied5 stars when some luxury brands are also available",
+    },
+    {
+      name: "Vijay Thombre",
+      msg: "Excellent ServiceI have purchased a wristwatch in 2008 and went in 2019 to change its belt.The owner and staff recognized that the watch was purchased from their shop.The staff is helpful and humble.I would prefer this shop to buy a watch rather than purchasing it online.",
+    },
+    {
+      name: "Abhishek Kongari",
+      msg: "The best shop to buy branded watches with good variety",
+    },
+    {
+      name: "rahim mokashi",
+      msg: "in Solapur city the first watch shop which provides international brands watches",
+    },
+  ];
+
    
 
   // const opnt = {
@@ -140,27 +167,33 @@ const Home = () => {
         p="10px"
         pb="10px"
       >
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
-        <Curstomer />
+        {custmd.map((item,index)=>(
+        <Curstomer  key={index} name={item.name} msg={item.msg}/>
+        ))}
       </Box>
 
-      <Box w='100vw' h={{base:'20vh',md:'40vh',lg:'60vh'}}  ml={{lg:'-5rem'}}  display={'flex'} alignItems={'center'} justifyContent={'center'} >
-      <video
-        style={{ width: "100%", height: "100%", objectFit: "cover",boxShadow:'0px 5px 20px rgba(0,0,0,0.130)'}}
-        src={vid}
-        autoPlay  
-        loop
-        muted
-        controlsList="nodownload nofullscreen noremoteplayback noaudio"
+      <Box
+        w="100vw"
+        h={{ base: "20vh", md: "40vh", lg: "60vh" }}
+        ml={{ lg: "-5rem" }}
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <video
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            boxShadow: "0px 5px 20px rgba(0,0,0,0.130)",
+          }}
+          src={vid}
+          autoPlay
+          loop
+          muted
+          controlsList="nodownload nofullscreen noremoteplayback noaudio"
         ></video>
-        </Box>
+      </Box>
       <Footer />
     </>
   );
