@@ -89,7 +89,7 @@ const Popular = () => {
           letterSpacing={{ base: "10px", md: "8px", lg: "7px" }}
           textAlign={"center"}
           fontSize={{ md: "4vmin", lg: "4vmin" }}
-          fontWeight="300"
+          fontWeight="400"
         >
           POPULAR ITEMS
         </Text>

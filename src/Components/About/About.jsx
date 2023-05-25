@@ -1,9 +1,6 @@
 import React from 'react'
 import {Box,Image,Text} from '@chakra-ui/react'
 import first from './first.jpg'
-import second from './second.jpg'
-import third from './third.jpg'
-import { chakra } from "@chakra-ui/react";
 import { motion } from 'framer-motion'
 import main from './bigmimt.jpg'
 
