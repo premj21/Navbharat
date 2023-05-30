@@ -149,7 +149,7 @@ const Home = () => {
         <Text
           position={"relative"}
           top="-50"
-          letterSpacing={{ base: "6px", md: "8px", lg: "7px" }}
+          letterSpacing={{ base: "6px", md: "8px", lg: "11px" }}
           textAlign={"center"}
           fontSize={{ md: "4vmin", lg: "4vmin" }}
           fontWeight="400"

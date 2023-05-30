@@ -86,7 +86,7 @@ const Popular = () => {
         <Text
           position={"relative"}
           top="-50"
-          letterSpacing={{ base: "10px", md: "8px", lg: "7px" }}
+          letterSpacing={{ base: "10px", md: "8px", lg: "11px" }}
           textAlign={"center"}
           fontSize={{ md: "4vmin", lg: "4vmin" }}
           fontWeight="400"

@@ -32,13 +32,12 @@ const About = () => {
     <Box
       w="100vw"
       ml={{ lg: "-5rem" }}
-      p="0 5vw"
+      // p="0 5vw"
       h="100vh"
-      mt="1rem"
       gap="2rem"
     >
       <Box w="100%" h="100%" mb="-3rem">
-        <Image src={main} h="80%" w="100%" />
+        <Image src={main} h="90%" w="100%" />
       </Box>
 
       <Box
@@ -83,7 +82,6 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-
       <Box
         w={{ base: "90vw", md: "80vw" }}
         h="80vh"
