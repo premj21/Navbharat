@@ -12,7 +12,7 @@ const Footer = () => {
     <Box
       w="100vw"
       ml={{ lg: "-5rem" }}
-      mt={{base:"-3rem",md:'0'}}
+      mt={{ base: "-3rem", md: "0" }}
       p={{ base: "1.3rem", md: "2.6rem", lg: "2rem 2rem 1rem 2rem" }}
       display={"flex"}
       flexDir={"column"}
@@ -21,12 +21,10 @@ const Footer = () => {
       <Box
         display={"flex"}
         alignItems={"center"}
-        justifyContent={'center'}
+        justifyContent={"center"}
         gap={{ base: "20px", md: "50px" }}
       >
-        <Box
-          w={{ base: "20vw", md: "30vw", lg: "25vw" }}
-        >
+        <Box w={{ base: "20vw", md: "30vw", lg: "25vw" }}>
           <img
             src={logo}
             height="20%"

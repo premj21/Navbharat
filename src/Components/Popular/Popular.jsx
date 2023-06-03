@@ -107,6 +107,7 @@ const Popular = () => {
       >
         {data.map((itme, index) => (
           <Box
+            
             display={"flex"}
             flexDir={"column"}
             alignItems={"center"}
@@ -116,7 +117,6 @@ const Popular = () => {
             h="20%"
            
           >
-            
               <Imges
                 link={itme.link}
                 w={itme.w}

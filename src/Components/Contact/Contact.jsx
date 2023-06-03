@@ -7,8 +7,16 @@ import Footer from '../footer/Footer';
 const Contact = () => { 
   return (
     <>
-      <Box w="100vw" ml={{lg:"-5rem"}} h="fit-content" bg="white">
+      <Box w="100vw" ml={{ lg: "-5rem" }} h="fit-content" bg="white">
         <Box
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          
           maxW="100%"
           maxH="70vh"
           overflow={"hidden"}
@@ -56,13 +64,8 @@ const Contact = () => {
           </Text>
         </Box>
 
-        <Tabs
-          mb="3rem"
-          w="100vw"
-          position="relative"
-          variant="unstyled"
-        >
-          <TabList ml={{base:'2rem',md:"10rem"}}>
+        <Tabs mb="3rem" w="100vw" position="relative" variant="unstyled">
+          <TabList ml={{ base: "2rem", md: "10rem" }}>
             <Tab>Branch-1</Tab>
             <Tab>Branch-2</Tab>
           </TabList>

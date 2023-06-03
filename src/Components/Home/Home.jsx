@@ -1,4 +1,4 @@
-import { Box, Text, Image, keyframes } from "@chakra-ui/react";
+import { Box, Text, Image } from "@chakra-ui/react";
 import React from 'react'
 import watch from '../assets/watch.png.webp'
 import Popular from "../Popular/Popular";
@@ -10,15 +10,15 @@ import Showcaseimg from "../Showcase/Showcaseimg";
 
 
 
- const prem = keyframes`
-    from{
-       scale:0.9;
-       opacity :0.9;
-    }
-    to{
-      scale:1.2;
-      opacity: 1;
-    } `;
+//  const prem = keyframes`
+//     from{
+//        scale:0.9;
+//        opacity :0.9;
+//     }
+//     to{
+//       scale:1.2;
+//       opacity: 1;
+//     } `;
 
 
 const Home = () => {
@@ -67,7 +67,7 @@ const Home = () => {
 
 
 
-  const myanimation = `${prem} 1 2s`
+  // const myanimation = `${prem} 1 2s`
 
   return (
     <>
@@ -86,6 +86,13 @@ const Home = () => {
           pl="10%"
           alignItems={"flex-start"}
           justifyContent={"center"}
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
           <Text
             fontSize={"12vmin"}
@@ -115,7 +122,7 @@ const Home = () => {
             alignItems={"flex-end"}
             justifyContent={"start"}
           >
-            <Image animation={myanimation} src={watch} h="100%" />
+            <Image  src={watch} h="100%" />
           </Box>
         </Box>
       </Box>
@@ -167,8 +174,8 @@ const Home = () => {
         p="10px"
         pb="10px"
       >
-        {custmd.map((item,index)=>(
-        <Curstomer  key={index} name={item.name} msg={item.msg}/>
+        {custmd.map((item, index) => (
+          <Curstomer key={index} name={item.name} msg={item.msg} />
         ))}
       </Box>
 
@@ -181,6 +188,9 @@ const Home = () => {
         justifyContent={"center"}
       >
         <video
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1500"
           style={{
             width: "100%",
             height: "100%",

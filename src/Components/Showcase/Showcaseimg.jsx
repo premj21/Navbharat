@@ -25,6 +25,7 @@ const Showcaseimg = () => {
      };
   return (
     <Box
+    
       maxW="100vw"
       w="100vw"
       h={{ base: "900px", md: "60vh", lg: "80vh" }}

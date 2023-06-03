@@ -51,7 +51,10 @@ const Imges = ({src,name,price,index,w,h,link}) => {
             src={src}
             alt="pic loading"
             key={index}
-            mt={{ base: price === ("₹ 6,998.00" || "$165.00") ? "16px" : 0 ,md:0}}
+            mt={{
+              base: price === ("₹ 6,998.00" || "$165.00") ? "16px" : 0,
+              md: 0,
+            }}
           />
 
           <Box>
