@@ -36,20 +36,20 @@ const Popular = () => {
       },
       {
         src: d,
-        w: "100%",
+        w: "105%",
         h: "100%",
-        price: "$165.00",
-        name: "Gold Tone Case Black Genuine leather/Silicone Watch",
-        link: "https://shop.guesswatches.com/gold-tone-case-black-genuine-leather-silicone-watch/GW0500G1.html?cgid=signature-style#start=1",
+        price: "₹ 13,495.00",
+        name: "Jacqueline Sun Moon Multifunction Gold-Tone",
+        link: "https://www.fossil.com/en-in/products/jacqueline-sun-moon-multifunction-gold-tone-stainless-steel-watch/ES5167.html",
       },
 
       {
         src: e,
-        price: "₹ 3,65,800",
-        w: "80%",
+        price: "₹ 122,100.00",
+        w: "105%",
         h: "100%",
-        name: "Captain Cook High-Tech Ceramic ",
-        link: "https://www.ethoswatches.com/product-rado-captain-cook-r32127162.html",
+        name: "Rado Diastar gents automatic",
+        link: "https://www.rado.com/the-original-automatic-cvd-coated-hardmetal-other-35mm-r12413503.html",
       },
       {
         src: f,

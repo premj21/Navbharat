@@ -25,7 +25,6 @@ const Showcaseimg = () => {
      };
   return (
     <Box
-    
       maxW="100vw"
       w="100vw"
       h={{ base: "900px", md: "60vh", lg: "80vh" }}
@@ -38,6 +37,7 @@ const Showcaseimg = () => {
       initial={"ascren"}
     >
       <Image
+      
         as={motion.img}
         variants={textanm}
         w={{ base: "100vw", md: "25vw" }}
@@ -45,7 +45,7 @@ const Showcaseimg = () => {
         src={a}
         alt="no image"
       />
-      <Box display={"flex"} flexDir={{ base: "row", md: "column" }}>
+      <Box display={"flex"} flexDir={{ base: "row", md: "column" }} >
         <Image
           as={motion.img}
           variants={textanm}
@@ -78,7 +78,7 @@ const Showcaseimg = () => {
           variants={textanm}
           w={{ base: "50vw", md: "32vw" }}
           h={{ base: "200px", md: "50%" }}
-          src={d}
+          src={b}
           alt="no image"
         />
         <Image
@@ -86,7 +86,7 @@ const Showcaseimg = () => {
           variants={textanm}
           w={{ base: "50vw", md: "32vw" }}
           h={{ base: "200px", md: "50%" }}
-          src={b}
+          src={d}
           alt="no image"
         />
       </Box>

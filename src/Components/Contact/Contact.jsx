@@ -16,7 +16,7 @@ const Contact = () => {
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="false"
-          
+          zIndex={10111}
           maxW="100%"
           maxH="70vh"
           overflow={"hidden"}

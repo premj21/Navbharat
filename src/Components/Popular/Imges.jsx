@@ -56,7 +56,6 @@ const Imges = ({src,name,price,index,w,h,link}) => {
               md: 0,
             }}
           />
-
           <Box>
             <Text
               w={{ base: "40vw", md: "25vw", lg: "20vw" }}
@@ -75,70 +74,6 @@ const Imges = ({src,name,price,index,w,h,link}) => {
             </Text>
           </Box>
         </Box>
-
-        {/* <Modal
-        w="70vw"
-        h="60vh"
-        blockScrollOnMount={false}
-        onClose={onClose}
-        isOpen={isOpen}
-      >
-        <ModalOverlay backdropFilter="auto" backdropBlur="2px" />
-        <ModalContent
-          minW="50vw"
-          h="80vh"
-          boxShadow={"0px 5px 20px rgba(0,0,0,0.100)"}
-          bg="red"
-          p='2rem'
-        >
-          <ModalHeader textAlign={"center"} color={"white"}>
-            {name}
-          </ModalHeader>
-          <ModalBody>
-            <Box p="3rem" w="100%" h="100%" display={"flex"} gap="10%">
-              <Box
-                w="45%"
-                display={"flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
-              >
-                <Image
-                  w={'100%'}
-                  h={'100%'}
-              
-                  boxShadow={"0px 5px 20px rgba(0,0,0,0.120)"}
-                  src={src}
-                  alt="pic loading"
-                  key={index}
-                />
-              </Box>
-              <Box
-                w="45%"
-                h="100%"
-                display={"flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
-                flexDir={"column"}
-                gap="20px"
-              >
-                <Text
-                  textAlign={"center"}
-                  fontSize={{ base: "3vmin", md: "2vmin", lg: "4vmin" }}
-                  color={"white"}
-                >
-                  {name}
-                </Text>
-                <Text fontWeight={"600"} color={"white"}>
-                  {price}
-                </Text>
-                <Button w="80%" variant={"solid"} bg="white">
-                  Watch
-                </Button>
-              </Box>
-            </Box>
-          </ModalBody>
-        </ModalContent>
-      </Modal> */}
       </a>
     </>
   );

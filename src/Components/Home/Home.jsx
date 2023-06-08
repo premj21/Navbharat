@@ -9,7 +9,6 @@ import vid from './Navbhst.mp4';
 import Showcaseimg from "../Showcase/Showcaseimg";
 
 
-
 //  const prem = keyframes`
 //     from{
 //        scale:0.9;
@@ -21,7 +20,8 @@ import Showcaseimg from "../Showcase/Showcaseimg";
 //     } `;
 
 
-const Home = () => {
+
+  const Home = () => {
 
   const custmd = [
     {
@@ -30,7 +30,7 @@ const Home = () => {
     },
     {
       name: "Rutvik Chavan",
-      msg: "Best shop to buy watches with affordable prices",
+      msg: "Best shop to buy watches with affordable prices",
     },
     {
       name: "Rahul Gawas",
@@ -50,6 +50,9 @@ const Home = () => {
     },
   ];
 
+
+
+
    
 
   // const opnt = {
@@ -62,18 +65,14 @@ const Home = () => {
   //     scale:5
   //   },
   // };
-
- 
-
-
-
   // const myanimation = `${prem} 1 2s`
 
   return (
     <>
       <Box
         h={{ base: "70vh", md: "80%", lg: "100%" }}
-        w="100%"
+        w={{base:'100%',md:"100vw"}}
+        ml={{lg:'-5rem'}}
         overflowY={"hidden"}
         display={"flex"}
         boxShadow="0px 5px 20px rgba(0,0,0,0.100)"
@@ -127,11 +126,12 @@ const Home = () => {
         </Box>
       </Box>
 
+      
+
       <Showcaseimg />
       <Box w="100%" h="fit-content">
         <Popular />
       </Box>
-
       <Allbrands />
       <Box
         maxW={"100vw"}
@@ -209,4 +209,4 @@ const Home = () => {
   );
 }
 
-export default Home
+export default Home;
