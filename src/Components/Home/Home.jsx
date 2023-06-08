@@ -181,7 +181,7 @@ import Showcaseimg from "../Showcase/Showcaseimg";
 
       <Box
         w="100vw"
-        h={{ base: "20vh", md: "40vh", lg: "60vh" }}
+        h={{ base: "20vh", md: "40vh", lg: "67vh" }}
         ml={{ lg: "-5rem" }}
         display={"flex"}
         alignItems={"center"}
