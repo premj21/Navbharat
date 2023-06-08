@@ -92,6 +92,7 @@ import Showcaseimg from "../Showcase/Showcaseimg";
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="false"
+          zIndex={-100}
         >
           <Text
             fontSize={"12vmin"}
@@ -99,6 +100,7 @@ import Showcaseimg from "../Showcase/Showcaseimg";
             letterSpacing="2px"
             lineHeight={"110%"}
             color={"#0b1c39"}
+            zIndex={-100}
           >
             Select Your New Perfect Style
           </Text>

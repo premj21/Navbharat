@@ -1,91 +1,128 @@
-import React from 'react'
-import {Box,Image,Text} from '@chakra-ui/react'
-import pic from "../assets/navbharat logo copy.png";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {  useState } from 'react'
+import {Box,Text} from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom';
 import HomeIcon from "@mui/icons-material/Home";
-import { AiOutlineExclamationCircle } from "react-icons/ai";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
+import CloseIcon from "@mui/icons-material/Close";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
+import FormatListBulletedSharpIcon from "@mui/icons-material/FormatListBulletedSharp";
+import YES from './YES';
 
 const Navbar2 = () => {
     const navigate = useNavigate(); 
+
+     const [st, setst] = useState({
+       cross: "none",
+       line: "set",
+     });
+
+
+ 
+
+
+
   return (
-    <Box w="90vw" display={"flex"}>
-      <Box position={"fixed"} w="20vw" top={5} left={10}>
-        <Image
-          onClick={() => navigate("/")}
-          cursor={'pointer'}
-          zIndex={10000000000}
-          w="35%"
-          h="20%"
-          src={pic}
-          alt="nothing"
-        />
-      </Box>
+    <>
       <Box
-        display={"flex"}
-        flexDir={"column"}
-        gap="30px"
+        cursor={"pointer"}
+        onClick={() => setst({ line: "none", cross: "set" })}
         position={"fixed"}
-        top={5}
-        right={20}
+        top={{ base: 7, md: 10 }}
+        right={{ base: 12, md: 20 }}
+        display={{ base: st.line, md: "none" }}
         zIndex={100000}
       >
+        <FormatListBulletedSharpIcon />
+      </Box>
+      <Box
+        cursor={"pointer"}
+        zIndex={10}
+        position={"fixed"}
+        top={{ base: 7, md: 10 }}
+        right={{ base: 12, md: 10 }}
+        onClick={() => setst({ line: "set", cross: "none" })}
+        display={{ base: st.cross, md: "none" }}
+      >
+        <CloseIcon />
+      </Box>
+
+      <YES />
+
+      <Box
+        display={{ base: st.line==='none'?'flex':'none', md: "none" }}
+        position={"fixed"}
+        top={14}
+        right={3}
+        flexDir={"column"}
+        w="26vw"
+        bg="black"
+        color={"white"}
+        zIndex={10000000000000000000000}
+      >
+        <Text
+          border={"1px solid white"}
+          p="15px"
+          onClick={() => navigate("/")}
+          cursor={"pointer"}
+        >
+          Home
+        </Text>
+        <Text
+          border={"1px solid white"}
+          p="15px"
+          onClick={() => navigate("/About")}
+          cursor={"pointer"}
+        >
+          About
+        </Text>
+        <Text
+          border={"1px solid white"}
+          p="15px"
+          onClick={() => navigate("/Contact")}
+          cursor={"pointer"}
+        >
+          Contact
+        </Text>
+      </Box>
+
+      <Box
+        display={{ base: "none", md: "flex" }}
+        flexDir={"column"}
+        gap={"30px"}
+        position={"fixed"}
+        top={{ base: 7, md: 10 }}
+        right={{ base: 12, md: 10, lg: "20" }}
+      >
         <HomeIcon
-          style={{ fontSize: "1.8rem", color: "#6e433f", cursor: "pointer" }}
+          style={{
+            fontSize: "3vmin",
+            cursor: "pointer",
+            color: "#4e4d4d",
+            zIndex: "10000000000000000000 !important",
+          }}
           onClick={() => navigate("/")}
         />
-        <AiOutlineExclamationCircle
-          style={{ fontSize: "1.8rem", color: "#6e433f", cursor: "pointer" }}
+        <DensityMediumIcon
+          style={{
+            fontSize: "3vmin",
+            cursor: "pointer",
+            color: "#4e4d4d",
+            zIndex: "10000000000000000000 !important",
+          }}
           onClick={() => navigate("/About")}
         />
         <PermContactCalendarIcon
-          style={{ fontSize: "1.8rem", color: "#6e433f", cursor: "pointer" }}
-          onClick={() => navigate("/contact")}
+          style={{
+            fontSize: "3vmin",
+            cursor: "pointer",
+            color: "#4e4d4d",
+            zIndex: "100000000000000000000 !important",
+          }}
+          onClick={() => navigate("/Contact")}
         />
-        {/* <Text
-          textAlign={"end"}
-          _hover={{
-            fontSize: "2.3vmin",
-            fontWeight: "600",
-            textAlign: "center",
-          }}
-          fontSize={{ base: "3vmin", md: "2.2vmin" }}
-          letterSpacing={"3.5px"}
-          cursor={"pointer"}
-          onClick={() => navigate("/")}
-        >
-          Home
-        </Text> */}
-        {/* <Text
-          textAlign={"end"}
-          _hover={{
-            fontSize: "2.3vmin",
-            fontWeight: "600",
-            textAlign: "center",
-          }}
-          fontSize={{ base: "3vmin", md: "2.2vmin" }}
-          cursor={"pointer"}
-          letterSpacing={"3.5px"}
-          onClick={() => navigate("/About")}
-        >
-          About
-        </Text> */}
-        {/* <Text
-          textAlign={"end"}
-          _hover={{
-            fontSize: "2.3vmin",
-            fontWeight: "600",
-            textAlign: "center",
-          }}
-          fontSize={{ base: "3vmin", md: "2.2vmin" }}
-          cursor={"pointer"}
-          letterSpacing={"3.5px"}
-          onClick={() => navigate("/contact")}
-        >
-          Contact
-        </Text> */}
       </Box>
-    </Box>
+    </>
   );
 }
 

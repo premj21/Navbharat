@@ -9,13 +9,13 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <Box w="100vw" ml={{ lg: "-5rem" }} display={"flex"} gap="3vw">
+    <Box w="100vw" mb="2rem" ml={{ lg: "-5rem" }} display={"flex"} gap="3vw">
       <Box
         w="30vw"
         display={"flex"}
         flexDir={"column"}
         alignItems="center"
-        justifyContent={{ base: "flex-start", md: "flex-start" }}
+        justifyContent={{ base: "center", md: "flex-start" }}
         gap={{ base: "10px", md: "20px" }}
         p="2rem"
       >
@@ -27,18 +27,12 @@ const Footer = () => {
           justifyContent={{ base: "flex-start", md: "center" }}
         >
           <Image
+         
             src={logo}
-            height={{base:"100%",md:'50%',lg:'50%'}}
-            width={{ base: "100%", md: "70%",lg:'50%' }}
+            height={{ base: "100%", md: "100%", lg: "80%" }}
+            width={{ base: "100%", md: "100%", lg: "70%" }}
             alt="logo"
           />
-          <Text
-            fontSize={{ base: "2vmin", md: "1.5vmin" }}
-            fontWeight={700}
-            letterSpacing={"5px"} 
-          >
-            Watch Company
-          </Text>
         </Box>
 
         <Text
@@ -104,7 +98,7 @@ const Footer = () => {
           letterSpacing={"2px"}
           fontWeight={"600"}
         >
-          <EmailIcon style={{ fontSize: "15px", marginRight: "-10px" }} />
+          <EmailIcon style={{ fontSize: "15px", marginRight: "5px" }} />
           Premjadhav@gmail.com
         </Text>
       </Box>
