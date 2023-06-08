@@ -61,12 +61,12 @@ const TwoB = () => {
           <Box as={motion.div} variants={textanm} display={"flex"} gap="20px">
             <HomeIcon style={{ fontSize: "30px" }} />
             <Box display={"flex"} flexDirection={"column"} gap="5px">
-              <Text fontSize={{ md: "1.5vmin", lg: "2vmin" }}>
+              <Text fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}>
                 Maharashtra , India
               </Text>
               <Text
                 color={"blackAlpha.500"}
-                fontSize={{ md: "1.5vmin", lg: "2vmin" }}
+                fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}
               >
                 Solapur , 413001
               </Text>
@@ -77,13 +77,13 @@ const TwoB = () => {
             <WifiCallingIcon style={{ fontSize: "30px" }} />
             <Box display={"flex"} flexDirection={"column"} gap="5px">
               <Text
-                fontSize={{ md: "1.5vmin", lg: "2vmin" }}
+                fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}
                 letterSpacing={"3px"}
               >
                 +91 9665689342
               </Text>
               <Text
-                fontSize={{ md: "1.5vmin", lg: "2vmin" }}
+                fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}
                 color={"blackAlpha.500"}
               >
                 Mon to Fri 9am to 6pm
@@ -95,13 +95,13 @@ const TwoB = () => {
             <MailOutlineIcon style={{ fontSize: "30px" }} />
             <Box display={"flex"} flexDirection={"column"} gap="5px">
               <Text
-                fontSize={{ md: "1.5vmin", lg: "2vmin" }}
+                fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}
                 letterSpacing={"3px"}
               >
                 PremJadhav378@gmail.com
               </Text>
               <Text
-                fontSize={{ md: "1.5vmin", lg: "2vmin" }}
+                fontSize={{ base: "3vmin", md: "1.5vmin", lg: "2vmin" }}
                 color={"blackAlpha.500"}
               >
                 Ask your Query any time

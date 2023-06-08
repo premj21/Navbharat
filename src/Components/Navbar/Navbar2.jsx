@@ -18,8 +18,7 @@ const Navbar2 = () => {
      });
 
 
- 
-
+   
 
 
   return (
@@ -50,7 +49,7 @@ const Navbar2 = () => {
       <YES />
 
       <Box
-        display={{ base: st.line==='none'?'flex':'none', md: "none" }}
+        display={{ base: st.line === "none" ? "flex" : "none", md: "none" }}
         position={"fixed"}
         top={14}
         right={3}
@@ -63,7 +62,10 @@ const Navbar2 = () => {
         <Text
           border={"1px solid white"}
           p="15px"
-          onClick={() => navigate("/")}
+          onClick={() => {
+            navigate("/");
+            setst({ line: "set", cross: "none" });
+          }}
           cursor={"pointer"}
         >
           Home
@@ -71,7 +73,10 @@ const Navbar2 = () => {
         <Text
           border={"1px solid white"}
           p="15px"
-          onClick={() => navigate("/About")}
+          onClick={() => {
+            navigate("/About");
+            setst({ line: "set", cross: "none" });
+          }}
           cursor={"pointer"}
         >
           About
@@ -79,7 +84,10 @@ const Navbar2 = () => {
         <Text
           border={"1px solid white"}
           p="15px"
-          onClick={() => navigate("/Contact")}
+          onClick={() => {
+            navigate("/Contact");
+            setst({ line: "set", cross: "none" });
+          }}
           cursor={"pointer"}
         >
           Contact
