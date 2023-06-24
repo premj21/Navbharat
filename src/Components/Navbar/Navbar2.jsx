@@ -57,7 +57,7 @@ const Navbar2 = () => {
         w="26vw"
         bg="black"
         color={"white"}
-        zIndex={10000000000000000000000}
+        zIndex={200}
       >
         <Text
           border={"1px solid white"}

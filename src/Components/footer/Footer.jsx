@@ -15,7 +15,7 @@ const Footer = () => {
         display={"flex"}
         flexDir={"column"}
         alignItems="center"
-        justifyContent={{ base: "center", md: "flex-start" }}
+        justifyContent={{ base: "flex-start", md: "flex-start" }}
         gap={{ base: "10px", md: "20px" }}
         p="2rem"
       >
@@ -27,7 +27,6 @@ const Footer = () => {
           justifyContent={{ base: "flex-start", md: "center" }}
         >
           <Image
-         
             src={logo}
             height={{ base: "100%", md: "100%", lg: "80%" }}
             width={{ base: "100%", md: "100%", lg: "70%" }}

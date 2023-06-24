@@ -40,8 +40,10 @@ const Contact = () => {
           bg="white"
           boxShadow="0px 5px 20px rgba(255, 251, 251, 0.1)"
           p="10px"
+          zIndex={-100}
         >
           <Text
+          
             position={"relative"}
             top={{ base: "-5", md: "3", lg: "2" }}
             fontSize={{ base: "6vmin", lg: "6vmin" }}
@@ -64,7 +66,7 @@ const Contact = () => {
           </Text>
         </Box>
 
-        <Tabs mb="3rem" w="100vw" position="relative" variant="unstyled">
+        <Tabs mb="3rem" w="100vw" position="relative" variant="unstyled" >
           <TabList ml={{ base: "2rem", md: "10rem" }}>
             <Tab>Branch-1</Tab>
             <Tab>Branch-2</Tab>
